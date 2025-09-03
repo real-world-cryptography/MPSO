@@ -34,10 +34,17 @@ python3 build.py -DVOLE_PSI_ENABLE_BOOST=ON -DVOLE_PSI_ENABLE_GMW=ON -DVOLE_PSI_
 python3 build.py --install=../libvolepsi
 cp out/build/linux/volePSI/config.h ../libvolepsi/include/volePSI/
 ```
+### Linking Vole-PSI
 
+Vole-PSI can be linked via cmake in our CMakeLists.txt, just change the path to libvolepsi
+
+```bash
+find_package(volePSI REQUIRED HINTS "/path/to/libvolepsi")
+```
 ### Building MPSO
 
 ```bash
+#download our repo
 #in MPSO
 mkdir build
 cd build
