@@ -58,9 +58,9 @@ make
 ### Test for MPSO
 
 ```bash
-cd build
 #in MPSO/shell_for_test
 cp * ../build/
+#in build
 chmod +x *.sh
 #run union test script
 #in MPSO/build
